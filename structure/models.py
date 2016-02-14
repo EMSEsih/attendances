@@ -99,3 +99,13 @@ class UsageSalle(models.Model):
 
 	def __str__(self):
 		return self.salle.nomSalle
+
+
+class presenceProf(models.Model):
+	img_qr = models.CharField("The qrcode", max_length=100)
+	nom_prof = models.CharField("Nom complet du professeur",max_length=100)
+	moment = models.DateTimeField(auto_now=True)
+
+	def __str__(self):
+		return self.nom_prof
+

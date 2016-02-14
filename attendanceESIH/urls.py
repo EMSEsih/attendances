@@ -18,4 +18,7 @@ from django.contrib import admin
 
 urlpatterns = [
     url(r'', include(admin.site.urls)),
+    url(r'^jet/', include('jet.urls', 'jet')),
+    url(r'^generate/', 'structure.views.qrcode'),
+    url(r'^presence/', 'structure.views.presence'),
 ]

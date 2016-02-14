@@ -1,0 +1,13 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Presence</title>
+	</head>
+	<body>
+		<h1>Presence professeurs L2</h1>
+		<p>Connectez vous sur un routeur de l'ecole. Et scannez cette image</p>
+		<p><strong>Prof. Lys Pierre</strong> | Java  |  9Hres AM</p>
+		<img src="{% static 'qr/' %}{{ img}}" width="500px" height="500px">
+	</body>
+</html>
